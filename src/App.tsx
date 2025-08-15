@@ -102,20 +102,21 @@ function App() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20">
         <div 
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://i.ibb.co/4Zd31sW0/imgi-31-whatsapp-image-2025-07-08-at-17-35-53-2-mx-BXMK0x0wtje-Nq8.jpg)'
+            backgroundImage: 'url(https://i.ibb.co/XZwxh0Jj/imgi-2-whatsapp-image-2025-07-08-at-16-48-40-mnl-Jqgq48pc1-ML7r.jpg)',
+            backgroundPosition: 'center center'
           }}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-60" />
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight px-4">
             Aluguel de Caçambas e<br />
             <span className="text-orange-500">Retirada de Entulho</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-3xl mx-auto px-4">
             Entrega rápida, preço justo e destinação correta
           </p>
           
@@ -131,24 +132,24 @@ function App() {
           </div>
           
           {/* Promotional Banner */}
-          <div className="bg-orange-500 text-white py-3 px-6 rounded-lg mb-8 text-lg font-semibold">
+          <div className="bg-orange-500 text-white py-3 px-4 sm:px-6 rounded-lg mb-8 text-sm sm:text-lg font-semibold mx-4">
             🔥 PROMOÇÕES VÁLIDAS APENAS PELO SITE. CHAME NO WHATSAPP!
           </div>
           
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
             <a 
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors flex items-center justify-center space-x-2 transform hover:scale-105"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-4 rounded-full text-base sm:text-lg font-semibold transition-colors flex items-center justify-center space-x-2 transform hover:scale-105"
             >
               <Phone className="w-5 h-5" />
               <span>Pedir Caçamba no WhatsApp</span>
             </a>
             <button 
               onClick={() => scrollToSection('orcamento')}
-              className="border-2 border-white bg-transparent hover:bg-white hover:text-gray-900 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors transform hover:scale-105"
+              className="border-2 border-white bg-transparent hover:bg-white hover:text-gray-900 text-white px-6 sm:px-8 py-4 rounded-full text-base sm:text-lg font-semibold transition-colors transform hover:scale-105"
             >
               Solicitar Orçamento
             </button>
